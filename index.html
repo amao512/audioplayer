@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AudioPlayer</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="audioplayer">
+
+      <audio id="audio" src='' loop>
+        <source src=''></source>
+      </audio>
+
+      <div class="audio-title">
+        <span>Song Title</span>
+      </div>
+
+      <button class="play-pause">
+        <i class="material-icons" id="play">play_arrow</i>
+        <i class="material-icons" id="pause">pause</i>
+      </button>
+
+      <div class="progress-bar">
+        <div class="current-time">
+          <span id="currentTime">00:00</span>
+        </div>
+
+        <progress id="progress" max="100" value="0"></progress>
+
+        <div class="duration-time">
+          <span id="durationTime">00:00</span>
+        </div>
+      </div>
+
+      <div class="speed">
+        <i class="material-icons">speed</i>
+        <div class="typeSpeed">
+          <p data-speed="0.5">0.5x</p>
+          <p data-speed="1">1x</p>
+          <p data-speed="1.25">1.25x</p>
+          <p data-speed="1.5">1.5x</p>
+          <p data-speed="1.75">1.75x</p>
+          <p data-speed="2">2x</p>
+          <p data-speed="2.5">2.5x</p>
+        </div>
+      </div>
+
+      <div class="volume">
+        <div class="volume-icon">
+          <i class="material-icons" id="volume-on">volume_up</i>
+          <i class="material-icons" id="volume-off">volume_off</i>
+          <input type="range" id="volume" min=0 max=100/>
+        </div>
+
+      </div>
+
+      <div class="upload" title="Upload">
+        <label for="upload-music"><i class="material-icons">cloud_upload</i></label>
+        <input type="file" id="upload-music" accept=".mp3">
+      </div>
+
+      <div class="download" title="Download">
+        <i class="material-icons">cloud_download</i>
+      </div>
+
+      <div class="open-playlist" title="Playlist">
+        <i class="material-icons">menu</i>
+      </div>
+
+    </div>
+
+    <div class="song-list">
+
+    </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/class.js"></script>
+</body>
+</html>
