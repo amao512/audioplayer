@@ -97,6 +97,7 @@
   display: none;
   position: absolute;
   transition: all .2s ease;
+  z-index: 999;
 }
 
 .typeSpeed p {

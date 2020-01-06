@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Function of Download song
+  // If after downloading music doesn't open it means your app doens't support this file, you can use another app
   const downloadFile = (data, fileName = 'music.mp3', type='mp3') => {
     const a = document.createElement('a');
     a.style.display = 'none';
